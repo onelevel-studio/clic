@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clic Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+    <div class="card">
+        <h1>Clic 🎯</h1>
+        <p>Clics : <br><span id="count">0</span></p>
+        <p>Par clic : <br><span id="perClick">1</span></p>
+        <p>Par seconde : <br><span id="autoClickDisplay">0</span></p>
+        <button id="button" onclick="add()">CLIC</button>
+    </div>
+    </div>
+    <button class="shop-button" onclick="toggleShop()">Shop 🛒</button>
+
+<div class="shop" id="shop">
+    <h2>🛒 Shop</h2>
+    <button onclick="addClic(1, 100)">+1 clic / clic (100)</button>
+    <button onclick="upgradeAutoClick(1, 500)">+1 auto-clic / sec (500)</button>
+    <button onclick="addClic(10, 950)">+10 clic / clic (950)</button>
+    <button onclick="upgradeAutoClick(10, 4950)">+10 auto-clic / sec (4950)</button>
+    <button onclick="addClic(100, 9450)">+100 clic / clic (9450)</button>
+    <button onclick="upgradeAutoClick(100, 49950)">+100 auto-clic / sec (49950)</button>
+    <button onclick="addClic(1000, 94440)">+1000 clic / clic (94440)</button>
+    <button onclick="upgradeAutoClick(1000, 499950)">+1000 auto-clic / sec (499950)</button>
+    <button onclick="addClic(10000, 944440)">+10000 clic / clic (944440)</button>
+    <button onclick="upgradeAutoClick(10000, 4999950)">+10000 auto-clic / sec (4999950)</button>
+</div>
+    <footer>
+        &copy; 2026 <a href="https://moi14212869.github.io/onelevel/" target="_blank">OneLevel Studio</a>. Tous droits réservés.
+    </footer>
+    <audio id="pop" src="./assets/pop.mp3" preload="auto"></audio>
+    <audio id="buy" src="./assets/buy.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
